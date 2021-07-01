@@ -1,4 +1,4 @@
 # jebl3
 
-This is a fork from https://github.com/rambaut/jebl2, 
+This is a fork from https://github.com/rambaut/jebl2 ([1f13ac7f31106a8efa54ec99bdfb10a9f5a51496](https://github.com/rambaut/jebl2/tree/1f13ac7f31106a8efa54ec99bdfb10a9f5a51496)), 
 but improved to use Java 16 and [the Java Platform Module System (JPMS)](https://www.infoq.com/articles/java9-osgi-future-modularity/).
