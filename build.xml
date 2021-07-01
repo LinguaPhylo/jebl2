@@ -70,11 +70,6 @@
 
     <!-- no test yet -->
     <target name="test" depends="compile-jebl">
-
-        <junit printsummary="yes" failureproperty="testFailed">
-            <!--  TODO  -->
-        </junit>
-
         <fail if="testFailed" status="1" message="Unit test failed."/>
     </target>
 

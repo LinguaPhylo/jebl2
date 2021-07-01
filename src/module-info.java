@@ -1,7 +1,7 @@
 /**
  * @author Walter Xie
  */
-module jebl3 {
+module jebl {
     requires java.desktop;
     requires java.logging;
 
