@@ -54,7 +54,7 @@
         <tstamp/>
 
         <!-- Put everything in ${build} into the jebl-${DSTAMP}.jar file -->
-        <jar jarfile="${dist}/jebl-{version}.jar">
+        <jar jarfile="${dist}/jebl-${version}.jar">
             <fileset dir="${build}" includes="jebl/**/*.class,jebl/**/*.properties,jebl/**/*.png"/>
             <manifest>
                 <attribute name="Version" value="${version}"/>
