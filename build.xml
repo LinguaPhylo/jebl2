@@ -58,7 +58,7 @@
             <fileset dir="${build}" includes="jebl/**/*.class,jebl/**/*.properties,jebl/**/*.png"/>
             <manifest>
                 <attribute name="Version" value="${version}"/>
-                <attribute name="Class-Path" value="jebl-{version}.jar"/>
+                <attribute name="Class-Path" value="jebl-${version}.jar"/>
                 <attribute name="Created-By" value="Andrew Rambaut and Alexei Drummond"/>
                 <attribute name="Built-By" value="Walter Xie"/>
                 <attribute name="Built-Date" value="${TODAY}"/>
