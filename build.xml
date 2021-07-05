@@ -55,7 +55,7 @@
 
         <!-- Put everything in ${build} into the jebl-${DSTAMP}.jar file -->
         <jar jarfile="${dist}/jebl-${version}.jar">
-            <fileset dir="${build}" includes="jebl/**/*.class,jebl/**/*.properties,jebl/**/*.png"/>
+            <fileset dir="${build}" includes="module-info.class,jebl/**/*.class,jebl/**/*.properties,jebl/**/*.png"/>
             <manifest>
                 <attribute name="Version" value="${version}"/>
                 <attribute name="Class-Path" value="jebl-${version}.jar"/>
