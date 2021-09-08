@@ -12,10 +12,10 @@
 
     <property environment="env"/>
 
-    <property name="version" value="3.0.0"/>
+    <property name="version" value="3.0.1"/>
     <!-- Java 16 not available in GitHub Action -->
-    <property name="sourceVersion" value="15"/>
-    <property name="targetVersion" value="15"/>
+    <property name="sourceVersion" value="16"/>
+    <property name="targetVersion" value="16"/>
 
 
     <target name="clean">
@@ -57,10 +57,14 @@
         <jar jarfile="${dist}/jebl-${version}.jar">
             <fileset dir="${build}" includes="module-info.class,jebl/**/*.class,jebl/**/*.properties,jebl/**/*.png"/>
             <manifest>
-                <attribute name="Version" value="${version}"/>
                 <attribute name="Class-Path" value="jebl-${version}.jar"/>
-                <attribute name="Created-By" value="Andrew Rambaut and Alexei Drummond"/>
+                <!-- attributes defined for package versioning -->
+                <attribute name="Implementation-Title" value="JEBL"/>
+                <attribute name="Implementation-Version" value="${version}"/>
+                <attribute name="Implementation-Vendor" value="Andrew Rambaut and Alexei Drummond"/>
+                <!-- general main attributes -->
                 <attribute name="Built-By" value="Walter Xie"/>
+                <attribute name="Build-Jdk" value="${targetVersion}"/>
                 <attribute name="Built-Date" value="${TODAY}"/>
             </manifest>
 
