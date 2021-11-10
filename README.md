@@ -6,3 +6,10 @@ This is a fork from [jebl2](https://github.com/rambaut/jebl2) at ([1f13ac7f31106
 but improved to use Java 16 and [the Java Platform Module System (JPMS)](https://www.infoq.com/articles/java9-osgi-future-modularity/).
 
 The current exporting packages can be seen from [module-info.java](src/main/java/module-info.java).
+
+## Gradle
+
+1. Clean : `./gradlew clean`
+2. Build with info : `./gradlew build --info`
+3. Create jar files : `./gradlew jar` and look for the folder "build/libs"
+4. Publish.
