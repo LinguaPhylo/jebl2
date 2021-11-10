@@ -2,13 +2,16 @@ name: jebl3 tests
 on: [ push, pull_request, workflow_dispatch ]
 
 jobs:
-  test-lphy:
+  test-jebl:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 15
-        uses: actions/setup-java@v1
+      - name: Set up JDK 16
+        uses: actions/setup-java@v2
         with:
-          java-version: 15.0.1
-      - name: Run Ant
-        run: ant -noinput -buildfile build.xml github-actions
+          java-version: 16
+          distribution: 'adopt'
+          cache: 'gradle'
+      - name: Run Gradle build
+        # no test yet
+        run: ./gradlew build

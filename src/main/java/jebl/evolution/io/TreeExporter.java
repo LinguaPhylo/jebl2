@@ -1,6 +1,5 @@
 package jebl.evolution.io;
 
-import jebl.evolution.alignments.Alignment;
 import jebl.evolution.trees.Tree;
 
 import java.io.IOException;
