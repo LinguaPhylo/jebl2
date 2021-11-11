@@ -9,7 +9,7 @@ plugins {
 
 group = "io.github.linguaphylo"
 base.archivesName.set("jebl")
-version = "3.1.0-b.1"
+version = "3.1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -46,7 +46,7 @@ tasks.compileJava {
 var calendar: Calendar? = Calendar.getInstance()
 var formatter = SimpleDateFormat("dd-MMM-yyyy HH:mm:ss")
 
-// shared attributes
+// create jar
 tasks.withType<Jar>() {
     manifest {
         attributes(
@@ -57,6 +57,12 @@ tasks.withType<Jar>() {
             "Build-Jdk" to JavaVersion.current().majorVersion.toInt(),
             "Built-Date" to formatter.format(calendar?.time)
         )
+    }
+    // copy LICENSE to META-INF
+    metaInf {
+        from (rootDir) {
+            include("LICENSE")
+        }
     }
 }
 
@@ -77,6 +83,15 @@ publishing {
         create<MavenPublication>("JEBL3") {
             artifactId = base.archivesName.get()
             from(components["java"])
+
+            pom {
+                licenses {
+                    license {
+                        name.set("GNU Lesser General Public License, version 2.1")
+                        url.set("https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt")
+                    }
+                }
+            }
         }
     }
 
