@@ -1,7 +1,8 @@
 package jebl.evolution.characters;
 
-import jebl.evolution.taxa.*;
-import java.util.*;
+import jebl.evolution.taxa.Taxon;
+
+import java.util.Set;
 
 /**
  * @author Stephen A. Smith
@@ -53,8 +54,8 @@ public interface Character{
 	public Object getValue(Taxon taxon);
 
 	/**
-	 * get a Set<Taxon> of all the taxa for this character
-	 * @return a Set<Taxon> containing all of the taxa for this character
+	 * get a Set&lt;Taxon&gt; of all the taxa for this character
+	 * @return a Set&lt;Taxon&gt; containing all of the taxa for this character
 	 */
 	public Set<Taxon> getTaxa();
 }

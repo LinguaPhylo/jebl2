@@ -70,7 +70,7 @@ import jebl.util.ProgressListener;
  * transition/transversion rates are done for each pair individually. The result is that distances are not neccesarily
  * scaled correctly for the matrix as a whole. I am still trying to figure this out.
  *
- * (*) The original code had a bug which counted only A<-->G substitutions while C<-->T where ignored.
+ * (*) The original code had a bug which counted only A&lt;--&gt;G substitutions while C&lt;--&gt;T where ignored.
  *
  */
 

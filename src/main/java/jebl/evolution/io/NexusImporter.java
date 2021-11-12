@@ -27,8 +27,8 @@ import java.awt.*;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.Reader;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -160,7 +160,7 @@ public class NexusImporter implements AlignmentImporter, SequenceImporter, TreeI
     /**
      *
      * @return the name of the next block which will be read. eg "TREES"
-     * @see {@link jebl.evolution.io.NexusImporter.NexusBlock}
+     * @see jebl.evolution.io.NexusImporter.NexusBlock
      */
     public String getNextBlockName() {
         return nextBlockName;
@@ -349,7 +349,7 @@ public class NexusImporter implements AlignmentImporter, SequenceImporter, TreeI
     /**
      * If not currently reading a TREES block then read ahead to the next TREES block, parsing TRANSLATE and TAXA blocks
      * in the process if necessary.
-     * <p/>
+     * <p>
      * Then determine if the current (or next) TREES block contains any more trees. If true then importNextTree will return a
      * non-null value.
      *
@@ -374,7 +374,7 @@ public class NexusImporter implements AlignmentImporter, SequenceImporter, TreeI
     /**
      * If not currently reading a TREES block then read ahead to the next TREES block, parsing TRANSLATE and TAXA blocks
      * in the process if necessary.
-     * <p/>
+     * <p>
      * Then parse the next available tree.
      *
      * @return the next available tree or null if no more trees are available

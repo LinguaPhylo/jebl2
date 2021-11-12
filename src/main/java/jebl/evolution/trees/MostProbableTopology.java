@@ -321,7 +321,7 @@ public class MostProbableTopology {
     /**
      * Get the most probable tree(s)
      *
-     * @param max At most this number of trees (max <= 0 is ignored)
+     * @param max At most this number of trees (max &leq; 0 is ignored)
      * @param threshold (in [01]) return first K topologies whose total frequencey is greater that threshold.
      * @return probable trees
      */

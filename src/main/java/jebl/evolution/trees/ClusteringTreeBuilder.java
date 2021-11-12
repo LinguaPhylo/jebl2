@@ -96,7 +96,7 @@ public abstract class ClusteringTreeBuilder<T extends Tree> implements TreeBuild
     /**
      * @param distanceMatrix pair distances to use when building
      * @param rootSubtrees Number of root subtrees. Typically 2 for rooted (completly bifurcating) or 3 for unrooted.
-     * @throws IllegalArgumentException when number of taxa is not compatibale with rootSubtrees (i.e. #taxa < #subtrees)
+     * @throws IllegalArgumentException when number of taxa is not compatibale with rootSubtrees (i.e. #taxa &lt; #subtrees)
      */
     protected ClusteringTreeBuilder(DistanceMatrix distanceMatrix, int rootSubtrees) throws IllegalArgumentException {
         this.distanceMatrix = distanceMatrix;

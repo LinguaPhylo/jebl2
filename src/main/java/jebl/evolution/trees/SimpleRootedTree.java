@@ -1,7 +1,6 @@
 package jebl.evolution.trees;
 
 import jebl.evolution.graphs.Edge;
-import jebl.evolution.graphs.Graph.NoEdgeException;
 import jebl.evolution.graphs.Node;
 import jebl.evolution.taxa.Taxon;
 import jebl.util.AttributableHelper;
@@ -11,7 +10,7 @@ import java.util.*;
 /**
  * A simple, and initially immutable rooted tree implementation. All returned collections
  * are defensively copied. The implementation of Node is private. A number of methods are
- * provided that can be used to construct a tree (createExternalNode & createInternalNode).
+ * provided that can be used to construct a tree (createExternalNode &amp; createInternalNode).
  *
  * @author Andrew Rambaut
  * @author Alexei Drummond

@@ -179,7 +179,7 @@ public class Utils {
      * triplet, starting with the triplet that is at index 0..2 in
      * nucleotideSequence, then the one at index 3..5 etc. until there are
      * less than 3 nucleotides left.
-     * <p/>
+     * <p>
      * This method uses {@link #translate(State[],GeneticCode)} to do the
      * translation, hence it shares some properties with that method:
      * 1.) Any excess nucleotides at the end will be silently discarded,

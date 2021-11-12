@@ -1,8 +1,9 @@
 package jebl.evolution.trees;
 
-import jebl.evolution.graphs.*;
+import jebl.evolution.graphs.Edge;
+import jebl.evolution.graphs.Graph;
+import jebl.evolution.graphs.Node;
 import jebl.evolution.taxa.Taxon;
-import jebl.evolution.trees.*;
 import jebl.util.AttributableHelper;
 import jebl.util.HashPair;
 
@@ -588,7 +589,7 @@ final public class ReRootedTree extends AbstractRootedTree {
 
 	/**
 	 * Root any tree by locating the "center" of tree and adding a new root node at that point
-	 * <p/>
+	 * <p>
 	 * for any point on the tree x let D(x) = Max{distance between x and t : for all tips t}
 	 * The "center" c is the point with the smallest distance, i.e. D(c) = min{ D(x) : x in tree }
 	 *

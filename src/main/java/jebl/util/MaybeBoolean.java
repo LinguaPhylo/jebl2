@@ -4,7 +4,7 @@ package jebl.util;
  * A tri-state boolean value that can also be "Maybe" besides True and False.
  * @author Tobias Thierer
  * @version $Id: MaybeBoolean.java 744 2007-07-30 02:57:11Z twobeers $
- *          <p/>
+ *          <p>
  *          Created on 30/07/2007 14:15:09
  */
 public enum MaybeBoolean {

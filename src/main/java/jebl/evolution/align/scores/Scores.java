@@ -64,7 +64,7 @@ public abstract class Scores implements ScoreMatrix {
     }
 
     /**
-     * @param scoreMatrix A ScoreMatrix with only low ascii characters (< chr(127)) in the alphabet
+     * @param scoreMatrix A ScoreMatrix with only low ascii characters (&lt; chr(127)) in the alphabet
      * @return A Scores instance corresponding to scoreMatrix.
      */
     public static Scores forMatrix(ScoreMatrix scoreMatrix) {

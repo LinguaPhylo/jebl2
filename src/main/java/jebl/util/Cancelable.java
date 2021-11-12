@@ -11,7 +11,7 @@ package jebl.util;
  *
  * @author Tobias Thierer
  * @version $Id: Cancelable.java 755 2007-08-10 04:47:14Z twobeers $
- *          <p/>
+ *          <p>
  *          Created on 10/08/2007 16:25:35
  */
 public interface Cancelable {

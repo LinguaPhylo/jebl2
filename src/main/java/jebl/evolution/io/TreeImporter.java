@@ -26,12 +26,12 @@ public interface TreeImporter extends Iterable<Tree> {
 
 	/**
      * This can be used to read one tree at a time in a loop:
-     * <code>
+     * <pre>{@code
      * List<Tree> trees = new ArrayList<Tree>();
      *  while (hasTree()) {
      *  trees.add(importNextTree());
      *  }
-     * </code>
+     * }</pre>
 	 * return whether another tree is available.
 	 */
 	boolean hasTree() throws IOException, ImportException;

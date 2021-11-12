@@ -5,7 +5,7 @@ package jebl.evolution.io;
  *
  * @author Tobias Thierer
  * @version $Id: IllegalCharacterPolicy.java 551 2006-12-04 03:05:01Z twobeers $
- *          <p/>
+ *          <p>
  *          created on 04.12.2006 15:15:54
  */
 public enum IllegalCharacterPolicy {

@@ -64,7 +64,7 @@ public class FixedBitSet {
 
     /**
      * @param bitset
-     * @return true if bitset contains this set (this <= bitset)
+     * @return true if bitset contains this set (this &leq; bitset)
      */
     public boolean setInclusion(final FixedBitSet bitset) {
         for (int k = 0; k < bits.length; ++k) {

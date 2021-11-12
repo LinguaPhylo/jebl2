@@ -1,8 +1,10 @@
 package jebl.evolution.characters;
 
-import java.util.*;
+import jebl.evolution.taxa.Taxon;
 
-import jebl.evolution.taxa.*;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author Stephen A. Smith
@@ -28,7 +30,7 @@ public class DiscreteCharacter implements Character{
 	 * @param name the name of the character
 	 * @param desc the description of the character
 	 * @param numOfStates the number of possible states for the character
-	 * @param taxa the Set<Taxon> containing the taxa with this character
+	 * @param taxa the Set&lt;Taxon&gt; containing the taxa with this character
 	 */
 	public DiscreteCharacter(String name, String desc, int numOfStates, Set<Taxon> taxa) {
 		this.name = name;
@@ -94,7 +96,7 @@ public class DiscreteCharacter implements Character{
 	
 	/**
 	 * 
-	 * @param stateDesc a Map<Integer, String> of the state descriptions corresponding to the values
+	 * @param stateDesc a {@code Map<Integer, String>} of the state descriptions corresponding to the values
 	 */
 	public void setStateDesc(Map <Integer, String> stateDesc){
 		this.stateDesc = stateDesc;
@@ -102,7 +104,7 @@ public class DiscreteCharacter implements Character{
 	
 	/**
 	 * 
-	 * @return the Map<Integer, String> of the state descriptions corresponding to the values
+	 * @return the {@code Map<Integer, String>} of the state descriptions corresponding to the values
 	 */
 	public Map <Integer, String> getStateDesc(){ return stateDesc; }
 	

@@ -62,7 +62,7 @@ public class CataclysmicDemographic extends ExponentialGrowth {
 
 	/**
 	 * An alternative parameterization of this model. This
-	 * function sets the decline rate using N0 & t which must
+	 * function sets the decline rate using N0 &amp; t which must
 	 * already have been set.
 	 */
 	public final void setSpikeFactor(double f) {

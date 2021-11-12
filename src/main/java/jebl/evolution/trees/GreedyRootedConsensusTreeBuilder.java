@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author Joseph Heled
  * @version $Id: GreedyRootedConsensusTreeBuilder.java 889 2008-02-27 01:13:21Z matt_kearse $
- *          <p/>
+ *          <p>
  *          Implementation shares some code with GreedyUnrootedConsensusTreeBuilder (which preceded it), and perhaps I will
  *          find a way to merge the two at a later stage when I have the time.
  */

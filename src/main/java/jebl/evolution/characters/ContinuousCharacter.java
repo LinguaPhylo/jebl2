@@ -1,8 +1,9 @@
 package jebl.evolution.characters;
 
-import java.util.*;
+import jebl.evolution.taxa.Taxon;
 
-import jebl.evolution.taxa.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Stephen A. Smith
@@ -26,7 +27,7 @@ public class ContinuousCharacter implements Character{
 	 * Constructs a basic ContinuousCharacter object with taxa added
 	 * @param name the name of the character
 	 * @param desc the description of the character
-	 * @param taxa the Set<Taxon> containing the taxa
+	 * @param taxa the Set&lt;Taxon&gt; containing the taxa
 	 */
 	public ContinuousCharacter(String name, String desc, Set<Taxon> taxa) {
 		this.name = name;
@@ -52,8 +53,8 @@ public class ContinuousCharacter implements Character{
 	}
 	
 	/**
-	 * set the taxa for this character with a previously constructed Set<Taxon>
-	 * @param taxa a Set<Taxon> of the taxa containing this character
+	 * set the taxa for this character with a previously constructed Set&lt;Taxon&gt;
+	 * @param taxa a Set&lt;Taxon&gt; of the taxa containing this character
 	 */
 	public void addTaxa(Set<Taxon>taxa){
 		this.taxa = taxa;

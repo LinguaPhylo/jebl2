@@ -21,7 +21,6 @@ public class NewickExporter implements TreeExporter {
      * Export a single tree
      *
      * @param tree
-     * @throws java.io.IOException
      */
     public void exportTree(Tree tree) {
         writeTree(tree);
@@ -31,7 +30,6 @@ public class NewickExporter implements TreeExporter {
      * Export a collection of trees
      *
      * @param trees
-     * @throws java.io.IOException
      */
     public void exportTrees(Collection<? extends Tree> trees) {
         for (Tree tree : trees) {

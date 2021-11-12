@@ -15,8 +15,8 @@ import java.awt.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
 /**
  * Export sequences and trees to Nexus format.
@@ -133,7 +133,6 @@ public class NexusExporter implements AlignmentExporter, SequenceExporter, TreeE
      * Export a single tree
      *
      * @param tree
-     * @throws java.io.IOException
      */
     public void exportTree(Tree tree) {
         List<Tree> trees = new ArrayList<Tree>();

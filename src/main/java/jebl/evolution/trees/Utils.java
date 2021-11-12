@@ -278,7 +278,7 @@ public final class Utils {
 
 	/**
 	 * Return a rooted tree from any tree.
-	 * <p/>
+	 * <p>
 	 * If tree already rooted, return it. Otherwise if there is a "natuarl root" (i.e. a node of
 	 * degree 2) use it as root. Otherwise use an internal node close to the center of the tree as a root.
 	 *
@@ -321,7 +321,7 @@ public final class Utils {
 
 	/**
 	 * Root any tree by locating the "center" of tree and adding a new root node at that point
-	 * <p/>
+	 * <p>
 	 * for any point on the tree x let D(x) = Max{distance between x and t : for all tips t}
 	 * The "center" c is the point with the smallest distance, i.e. D(c) = min{ D(x) : x in tree }
 	 *
@@ -453,7 +453,7 @@ public final class Utils {
 
 	/**
 	 * Right Neighbour of a tip (taxon).
-	 * <p/>
+	 * <p>
 	 * When tree is laid with children in given order, this would be the taxon to the right.
 	 *
 	 * @param tree
@@ -487,7 +487,7 @@ public final class Utils {
 
 	/**
 	 * Left Neighbour of a tip (taxon).
-	 * <p/>
+	 * <p>
 	 * When tree is laid with children in given order, this would be the taxon to the left.
 	 *
 	 * @param tree
