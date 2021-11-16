@@ -7,7 +7,8 @@ but improved to use Java 16 and [the Java Platform Module System (JPMS)](https:/
 
 The current exporting packages can be seen from [module-info.java](src/main/java/module-info.java).
 
-From version 3.1.0, JEBL3 will only release to the Maven Central Repository.
+From version 3.1.0, JEBL3 will only release to the Maven Central Repository. 
+https://search.maven.org/artifact/io.github.linguaphylo/jebl
 
 ## Gradle
 
