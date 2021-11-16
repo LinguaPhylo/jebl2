@@ -100,6 +100,7 @@ publishing {
             pom {
                 name.set(pubId)
                 description.set("The Java Evolutionary Biology Library using the Java Platform Module System.")
+                url.set("https://github.com/LinguaPhylo/jebl3")
                 packaging = "jar"
                 properties.set(mapOf(
                     "maven.compiler.source" to java.sourceCompatibility.majorVersion,
@@ -124,8 +125,8 @@ publishing {
                 }
                 // https://central.sonatype.org/publish/requirements/
                 scm {
-                    connection.set("scm:git:git://github.com/LinguaPhylo/jebl3.git")
-                    developerConnection.set("scm:git:ssh://github.com/LinguaPhylo/jebl3.git")
+                    connection.set("scm:git:https://github.com/LinguaPhylo/jebl3.git")
+                    developerConnection.set("scm:git:https://github.com/LinguaPhylo/jebl3.git")
                     url.set("http://github.com/LinguaPhylo/jebl3/")
                 }
             }
