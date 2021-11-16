@@ -10,6 +10,8 @@ The current exporting packages can be seen from [module-info.java](src/main/java
 From version 3.1.0, JEBL3 will only release to the Maven Central Repository. 
 https://search.maven.org/artifact/io.github.linguaphylo/jebl
 
+Javadoc of the latest release: https://www.javadoc.io/doc/io.github.linguaphylo/jebl
+
 ## Gradle
 
 1. Clean : `./gradlew clean`
