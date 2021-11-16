@@ -126,7 +126,7 @@ publishing {
                 scm {
                     connection.set("scm:git:git://github.com/LinguaPhylo/jebl3.git")
                     developerConnection.set("scm:git:ssh://github.com/LinguaPhylo/jebl3.git")
-                    url.set("https://github.com/LinguaPhylo/jebl3/tree/master")
+                    url.set("http://github.com/LinguaPhylo/jebl3/")
                 }
             }
         }
