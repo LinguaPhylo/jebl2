@@ -10,7 +10,7 @@ plugins {
 
 group = "io.github.linguaphylo"
 base.archivesName.set("jebl")
-version = "3.1.0"
+version = "3.1.1" // -SNAPSHOT
 
 repositories {
     mavenCentral()
@@ -22,8 +22,8 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_16
-    targetCompatibility = JavaVersion.VERSION_16
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
     withSourcesJar()
     withJavadocJar()
 }
